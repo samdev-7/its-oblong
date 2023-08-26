@@ -25,12 +25,25 @@
 	function onFormSubmit(e: SubmitEvent): void {}
 
 	$: {
+		link_input = link_input.trim();
+
 		let url_valid = validate_url(link_input);
 		console.log(url_valid);
 
 		if (browser) {
 			let link_input_e = document.getElementById('link-input') as HTMLInputElement;
 			if (link_input_e) {
+				if (url_valid || link_input.length === 0) {
+					link_input_e.className = link_input_e.className
+						.replace('border-red-500', 'border-zinc-300')
+						.replace('focus:border-red-500', 'focus:border-blue-500')
+						.replace('ring-red-500/50', 'ring-blue-500/50');
+				} else {
+					link_input_e.className = link_input_e.className
+						.replace('border-zinc-300', 'border-red-500')
+						.replace('focus:border-blue-500', 'focus:border-red-500')
+						.replace('ring-blue-500/50', 'ring-red-500/50');
+				}
 			}
 		}
 	}
@@ -100,7 +113,7 @@
 				Enter the link you want to shorten
 			</label>
 			<input
-				class="w-full font-medium placeholder-zinc-400 ring border-blue-500 border-2 py-2 px-4 my-0.5 rounded-lg focus:outline-none focus:border-blue-500 focus:ring motion-safe:transition-colors"
+				class="w-full font-medium placeholder-zinc-400 ring border-blue-500 border-2 py-2 px-4 my-0.5 rounded-lg focus:outline-none focus:border-blue-500 focus:ring ring-blue-500/50 motion-safe:transition-colors"
 				type="url"
 				placeholder={link_placeholder}
 				id="link-input"
