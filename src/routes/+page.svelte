@@ -2,8 +2,13 @@
 	import { onMount } from 'svelte';
 	import { validate_url } from '$lib/validation';
 	import { browser } from '$app/environment';
+	import type { PageData } from './$types';
 
-	var link_input: string = '';
+	export let data: PageData;
+
+	let link_placeholder = data.link_placeholder;
+
+	let link_input: string = '';
 
 	onMount(() => {
 		let link_input_e = document.getElementById('link-input') as HTMLInputElement;
@@ -97,7 +102,7 @@
 			<input
 				class="w-full font-medium placeholder-zinc-400 ring border-blue-500 border-2 py-2 px-4 my-0.5 rounded-lg focus:outline-none focus:border-blue-500 focus:ring motion-safe:transition-colors"
 				type="url"
-				placeholder="https://google.com"
+				placeholder={link_placeholder}
 				id="link-input"
 				required
 				bind:value={link_input}
