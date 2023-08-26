@@ -1,7 +1,44 @@
+<script lang="ts">
+	import { onMount } from 'svelte';
+	import { validate_url } from '$lib/validation';
+	import { browser } from '$app/environment';
+
+	var link_input: string = '';
+
+	onMount(() => {
+		let link_input_e = document.getElementById('link-input') as HTMLInputElement;
+		if (link_input_e) {
+			link_input_e.focus();
+
+			// Prevent flash due to state change on load
+			link_input_e.className = link_input_e.className
+				.replace('border-blue-500', 'border-zinc-300')
+				.replace('ring', '');
+		}
+	});
+
+	function onFormSubmit(e: SubmitEvent): void {}
+
+	$: {
+		let url_valid = validate_url(link_input);
+		console.log(url_valid);
+
+		if (browser) {
+			let link_input_e = document.getElementById('link-input') as HTMLInputElement;
+			if (link_input_e) {
+			}
+		}
+	}
+</script>
+
+<noscript>
+	<meta http-equiv="refresh" content="0; url=/noscript" />
+</noscript>
+
 <!-- Hero -->
-<div class="py-28 flex flex-col">
+<div class="py-20 flex flex-col text-center px-8">
 	<p
-		class="mx-auto text-md font-medium text-zinc-700 border-2 border-zinc-300 rounded-full py-1 px-5"
+		class="bg-white mx-auto text-md font-medium text-zinc-700 border-2 border-zinc-200 rounded-full py-1 px-5"
 	>
 		Coming soon! 🚀
 	</p>
@@ -44,4 +81,28 @@
 		Completely free, popups-less, no sign-ups, and zero ads.<br />Its.obl.ong is the best way to
 		create super short links that can be shared anywhere.
 	</p>
+</div>
+
+<div class="flex justify-center">
+	<form
+		class="grow flex justify-center max-w-3xl mx-4"
+		novalidate
+		on:submit|preventDefault={(e) => onFormSubmit(e)}
+	>
+		<!-- Link Input -->
+		<div class="w-full">
+			<label for="link-input" class="text-sm text-zinc-500 pl-2">
+				Enter the link you want to shorten
+			</label>
+			<input
+				class="w-full font-medium placeholder-zinc-400 ring border-blue-500 border-2 py-2 px-4 my-0.5 rounded-lg focus:outline-none focus:border-blue-500 focus:ring motion-safe:transition-colors"
+				type="url"
+				placeholder="https://google.com"
+				id="link-input"
+				required
+				bind:value={link_input}
+				aria-live="polite"
+			/>
+		</div>
+	</form>
 </div>
