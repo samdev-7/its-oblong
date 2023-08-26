@@ -145,7 +145,7 @@
 							<label
 								id="expiry10mLabel"
 								for="expiry10m"
-								class="grow border-2 border-r border-r-zinc-300 border-zinc-400 py-3 px-3 rounded-l-md peer-checked:bg-sky-500 peer-checked:text-white peer-checked:border-sky-600 peer-focus-visible:border-black peer-focus-visible:border-r-2 peer-focus-visible:border-l-2 peer-focus-visible:ring-black"
+								class="grow border-2 border-r border-r-zinc-300 border-zinc-400 py-3 px-3 bg-white rounded-l-md peer-checked:bg-sky-500 peer-checked:text-white peer-checked:border-sky-600 peer-focus-visible:border-black peer-focus-visible:border-r-2 peer-focus-visible:border-l-2 peer-focus-visible:ring-black"
 							>
 								10 min
 							</label>
@@ -163,7 +163,7 @@
 							<label
 								id="expiry1hLabel"
 								for="expiry1h"
-								class="grow border-2 border-r border-l border-r-zinc-300 border-l-zinc-300 border-zinc-400 py-3 px-3 peer-checked:bg-sky-500 peer-checked:text-white peer-checked:border-sky-600 peer-focus-visible:border-black peer-focus-visible:border-r-2 peer-focus-visible:border-l-2 peer-focus-visible:ring-black"
+								class="grow border-2 border-r border-l border-r-zinc-300 border-l-zinc-300 border-zinc-400 py-3 px-3 bg-white peer-checked:bg-sky-500 peer-checked:text-white peer-checked:border-sky-600 peer-focus-visible:border-black peer-focus-visible:border-r-2 peer-focus-visible:border-l-2 peer-focus-visible:ring-black"
 							>
 								1 hour
 							</label>
@@ -180,7 +180,7 @@
 							<label
 								id="expiry1dLabel"
 								for="expiry1d"
-								class="grow border-2 border-r border-l border-r-zinc-300 border-l-zinc-300 border-zinc-400 py-3 px-3 peer-checked:bg-sky-500 peer-checked:text-white peer-checked:border-sky-600 peer-focus-visible:border-black peer-focus-visible:border-r-2 peer-focus-visible:border-l-2 peer-focus-visible:ring-black"
+								class="grow border-2 border-r border-l border-r-zinc-300 border-l-zinc-300 border-zinc-400 py-3 px-3 bg-white peer-checked:bg-sky-500 peer-checked:text-white peer-checked:border-sky-600 peer-focus-visible:border-black peer-focus-visible:border-r-2 peer-focus-visible:border-l-2 peer-focus-visible:ring-black"
 							>
 								1 day
 							</label>
@@ -197,7 +197,7 @@
 							<label
 								id="expiry1MLabel"
 								for="expiry1M"
-								class="grow border-2 border-r border-l border-r-zinc-300 border-l-zinc-300 border-zinc-400 py-3 px-3 peer-checked:bg-sky-500 peer-checked:text-white peer-checked:border-sky-600 peer-focus-visible:border-black peer-focus-visible:border-r-2 peer-focus-visible:border-l-2 peer-focus-visible:ring-black"
+								class="grow border-2 border-r border-l border-r-zinc-300 border-l-zinc-300 border-zinc-400 py-3 px-3 bg-white peer-checked:bg-sky-500 peer-checked:text-white peer-checked:border-sky-600 peer-focus-visible:border-black peer-focus-visible:border-r-2 peer-focus-visible:border-l-2 peer-focus-visible:ring-black"
 							>
 								1 month
 							</label>
@@ -214,7 +214,7 @@
 							<label
 								id="expiry1yLabel"
 								for="expiry1y"
-								class="grow border-2 border-r border-l border-r-zinc-300 border-l-zinc-300 border-zinc-400 py-3 px-3 peer-checked:bg-sky-500 peer-checked:text-white peer-checked:border-sky-600 peer-focus-visible:border-black peer-focus-visible:border-r-2 peer-focus-visible:border-l-2 peer-focus-visible:ring-black"
+								class="grow border-2 border-r border-l border-r-zinc-300 border-l-zinc-300 border-zinc-400 py-3 px-3 bg-white peer-checked:bg-sky-500 peer-checked:text-white peer-checked:border-sky-600 peer-focus-visible:border-black peer-focus-visible:border-r-2 peer-focus-visible:border-l-2 peer-focus-visible:ring-black"
 							>
 								1 year
 							</label>
@@ -232,7 +232,7 @@
 							<label
 								id="expiryNoneLabel"
 								for="expiryNone"
-								class="grow border-2 border-l border-l-zinc-300 border-zinc-400 py-3 px-3 rounded-r-md peer-checked:bg-sky-500 peer-checked:text-white peer-checked:border-sky-600 peer-focus-visible:border-black peer-focus-visible:border-l-2 peer-focus-visible:ring-black"
+								class="grow border-2 border-l border-l-zinc-300 border-zinc-400 py-3 px-3 bg-white rounded-r-md peer-checked:bg-sky-500 peer-checked:text-white peer-checked:border-sky-600 peer-focus-visible:border-black peer-focus-visible:border-l-2 peer-focus-visible:ring-black"
 							>
 								No Expiry
 							</label>
