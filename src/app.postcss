@@ -17,3 +17,60 @@ html {
 
 	@apply font-inter;
 }
+
+@media (prefers-reduced-motion: no-preference) {
+	.blue-gradient {
+		background: linear-gradient(310deg, #14b8a6, #3b82f6);
+		background-size: 400% 400%;
+
+		-webkit-animation: BlueGradiant 10s ease infinite;
+		-moz-animation: BlueGradiant 10s ease infinite;
+		-o-animation: BlueGradiant 10s ease infinite;
+		animation: BlueGradiant 10s ease infinite;
+	}
+
+	@-webkit-keyframes BlueGradiant {
+		0% {
+			background-position: 0% 49%;
+		}
+		50% {
+			background-position: 100% 52%;
+		}
+		100% {
+			background-position: 0% 49%;
+		}
+	}
+	@-moz-keyframes BlueGradiant {
+		0% {
+			background-position: 0% 49%;
+		}
+		50% {
+			background-position: 100% 52%;
+		}
+		100% {
+			background-position: 0% 49%;
+		}
+	}
+	@-o-keyframes BlueGradiant {
+		0% {
+			background-position: 0% 49%;
+		}
+		50% {
+			background-position: 100% 52%;
+		}
+		100% {
+			background-position: 0% 49%;
+		}
+	}
+	@keyframes BlueGradiant {
+		0% {
+			background-position: 0% 49%;
+		}
+		50% {
+			background-position: 100% 52%;
+		}
+		100% {
+			background-position: 0% 49%;
+		}
+	}
+}
