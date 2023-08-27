@@ -53,7 +53,7 @@
 	<meta http-equiv="refresh" content="0; url=/noscript" />
 </noscript>
 
-<div class="min-h-screen flex justify-center flex-col">
+<div class="min-h-screen flex justify-center flex-col py-16">
 	<!-- Hero -->
 	<div class="pb-20 flex flex-col text-center px-8">
 		<p
