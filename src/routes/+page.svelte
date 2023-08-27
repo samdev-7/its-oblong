@@ -105,7 +105,7 @@
 	<!-- Form -->
 	<div class="flex justify-center">
 		<form
-			class="grow flex flex-col gap-y-4 justify-center max-w-4xl mx-4"
+			class="grow flex flex-col gap-y-6 justify-center max-w-4xl mx-4"
 			novalidate
 			on:submit|preventDefault={(e) => onFormSubmit(e)}
 		>
@@ -234,7 +234,7 @@
 								for="expiryNone"
 								class="grow border-2 border-l border-l-zinc-300 border-zinc-400 py-3 px-3 bg-white rounded-r-md peer-checked:bg-sky-500 peer-checked:text-white peer-checked:border-sky-600 peer-focus-visible:border-black peer-focus-visible:border-l-2 peer-focus-visible:ring-black"
 							>
-								No Expiry
+								10 years
 							</label>
 						</div>
 					</div>
