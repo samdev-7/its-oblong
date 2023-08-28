@@ -32,7 +32,7 @@ const path_length = {
 }
 
 const allowed_chars = "abcdefghjkmnpqrstuvwxyABCDEFGHJKMNPQRSTUVWXY234578";
-const max_attempts = 1;
+const max_attempts = 20;
 
 const blacklisted_paths = ['api', 'noscript', 'terms', 'privacy', 'legal', 'dash', 'dashboard', 'admin', 'favicon', 'assets']
 
@@ -133,7 +133,7 @@ export const POST: RequestHandler = async (event) => {
     console.log(`[${ip}] Received request`);
 
     const raw_data = await request.json();
-    console.log(`[${ip}] Received data: ${raw_data}`)
+    console.log(`[${ip}] Received data: ${JSON.stringify(raw_data)}`)
 
     if (!await validation(raw_data, ip)) {
         throw error(400);
@@ -150,12 +150,12 @@ export const POST: RequestHandler = async (event) => {
 
     const document = {
         path,
-        url: data.url,
+        url: data.url.startsWith("http://") || data.url.startsWith("https://") ? data.url : `https://${data.url}`,
         creation: new Date(),
         expiry: expires,
         created_by: event.getClientAddress()
     }
-    console.log(`[${ip}] Inserting into database: ${document}`)
+    console.log(`[${ip}] Inserting into database: ${JSON.stringify(document)}`)
     await collection.insertOne(document);
 
     const response = {
