@@ -13,7 +13,7 @@
 
 	let link_placeholder = data.link_placeholder;
 
-	let link_input: string = 'https://google.com';
+	let link_input: string = '';
 	let expiry_input: string = '1h';
 	let turnstile_token: string = '';
 	let turnstile_type: string = '';
