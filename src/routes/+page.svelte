@@ -385,7 +385,6 @@
 								name="expiry"
 								value="10y"
 								class="w-0 peer"
-								aria-hidden="true"
 								aria-labelledby="expiry10yLabel"
 								bind:group={expiry_input}
 							/>
