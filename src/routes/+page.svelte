@@ -289,7 +289,7 @@
 				</p>
 				<div class="flex mt-0.5 items-center flex-col md:flex-row space-y-8 md:space-y-0">
 					<div
-						class="grow h-full grid grid-cols-3 sm:grid-cols-6 w-full gap-x-3 gap-y-2 sm:gap-x-0 sm:gap-y-0"
+						class="grow grid grid-cols-3 sm:grid-cols-6 w-full gap-x-3 gap-y-2 sm:gap-x-0 sm:gap-y-0"
 					>
 						<div class={expiry_selector_styles}>
 							<input
