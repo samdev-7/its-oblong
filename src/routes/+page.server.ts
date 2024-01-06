@@ -8,7 +8,8 @@ export const load: PageServerLoad = () => {
         'https://github.com/SamDev-7',
         'https://takeb1nzyto.space/',
         'https://youtube.com/watch?v=XI7Cxdj2pAQ&t=4',
-        'https://snake.googlemaps.com/'
+        'https://snake.googlemaps.com/',
+        'https://obl.ong/'
     ];
 
     return {
