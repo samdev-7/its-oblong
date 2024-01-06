@@ -6,6 +6,9 @@ const config = {
 		extend: {
 			fontFamily: {
 				inter: ['Inter', 'sans-serif']
+			},
+			screens: {
+				'-sm': { max: '640px' }
 			}
 		}
 	},
