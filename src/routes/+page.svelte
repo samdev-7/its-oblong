@@ -253,8 +253,8 @@
 			</h1>
 		</div>
 		<p class="text-center text-zinc-800 text-md md:text-lg py-4 font-medium">
-			Completely free, popups-less, no sign-ups, and zero ads.<br />Its.obl.ong is the best way to
-			create super short links that can be shared anywhere.
+			Its.obl.ong is the best way to create super short links that can be shared anywhere.<br
+			/>Completely free, popups-less, no sign-ups, and zero ads. It just works.
 		</p>
 	</div>
 
